@@ -11,10 +11,10 @@ export class RestService {
 
   constructor(private http: HttpClient) { }
 
-  get(): Observable<Teams[]> {
+  get(): Observable<Array<Teams>> {
     let params = new HttpParams().set('params', this.params);
 
     return this.http
-      .get<Teams[]>(`/api/teams`, { params: params });
+      .get<Array<Teams>>(`/api/teams`, { params: params });
   };
 }

@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   private callGetRest(): void {
     this.rest.get().subscribe(
       teams => this.teams$ = teams,
-      error => console.log(error)
+      (error: Error) => alert(`Mensagem de erro: `+ error.message)
     );
   }
 }

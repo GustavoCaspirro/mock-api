@@ -69,7 +69,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "mock-backend:build",
-            "proxyConfig": "proxy.config.json"
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
